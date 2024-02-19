@@ -1,0 +1,11 @@
+{
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.formatting.provider": "none",
+    "sonarlint.connectedMode.project": {
+        "connectionId": "https-sonarqube-iserlohn-ftcp-nl",
+        "projectKey": "Evangelion-EVA-01"
+    },
+    "python.analysis.autoImportCompletions": true
+}

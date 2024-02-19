@@ -1,0 +1,7 @@
+aiohttp
+sentry-sdk
+py-cord
+numpy
+pynacl
+configparser
+python-dateutil

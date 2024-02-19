@@ -1,0 +1,13 @@
+[TOKENS]
+discord = 
+open_ai = 
+sentry_dsn =
+
+[GUILDS]
+MyGuilds = 0000000000, 0000000000
+ChannelsOfInteress = 000000000, 0000000
+ForumChannels = 000000000
+
+[SETTINGS]
+open_ai_model = gpt-3.5-turbo
+
