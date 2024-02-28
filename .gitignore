@@ -9,6 +9,7 @@ bot-env/
 venv/
 *.mp3
 audio/
+.env
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

@@ -1,0 +1,18 @@
+# Files to send to SSH server 
+files:
+  - ../cogs
+  - ../domain
+  - ../models
+  - ../modules
+  - ../services
+  - ../utils
+  - ../views
+  - ../config.ini
+  - ../discord.log
+  - ../docker-compose.yml
+  - ../docker-generate-image.sh
+  - ../Dockerfile
+  - ../EVA.py
+  - ../main.py
+  - ../requirements.txt
+  - ../startup.sh

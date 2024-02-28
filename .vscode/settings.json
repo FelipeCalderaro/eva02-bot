@@ -7,5 +7,6 @@
         "connectionId": "https-sonarqube-iserlohn-ftcp-nl",
         "projectKey": "Evangelion-EVA-01"
     },
-    "python.analysis.autoImportCompletions": true
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "off"
 }
