@@ -5,3 +5,4 @@ numpy
 pynacl
 configparser
 python-dateutil
+python-decouple
