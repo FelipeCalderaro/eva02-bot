@@ -6,3 +6,5 @@ pynacl
 configparser
 python-dateutil
 python-decouple
+paramiko
+pyyaml
