@@ -1,5 +1,4 @@
 #!/bin/bash
 
 cd /eva
-python3 main.py &
-tail -f discord.log
+python3 main.py
