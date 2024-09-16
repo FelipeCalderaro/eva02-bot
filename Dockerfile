@@ -1,4 +1,4 @@
-FROM python:3.11.8-bookworm
+FROM python:3.11-alpine
 COPY ./cogs /eva/cogs
 COPY ./domain /eva/domain
 COPY ./models /eva/models

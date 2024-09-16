@@ -4,9 +4,8 @@ from logging import Logger, getLogger, handlers, Formatter
 from discord import Intents
 from discord.bot import Bot
 import sentry_sdk
-import logging
+from decouple import config
 
-from configparser import ConfigParser
 from cogs.observer import Observer
 from utils.logger import AppLogger
 from EVA import Eva
@@ -17,12 +16,11 @@ logger = appLogger.logger
 
 # DEFINE CONFIGS
 logger.debug("Loading configs")
-CONFIG = ConfigParser()
-CONFIG.read("./config.ini")
-TOKEN = CONFIG["TOKENS"]["discord"]
-GUILDS = CONFIG["GUILDS"]["MyGuilds"]
-OPEN_AI = CONFIG["TOKENS"]["open_ai"]
-SENTRY_DSN = CONFIG["TOKENS"]["sentry_dsn"]
+
+TOKEN = config("DISCORD_TOKEN")
+GUILDS = config("MY_GUILDS")
+OPEN_AI = config("OPEN_AI")
+SENTRY_DSN = config("SENTRY_DSN")
 logger.debug("Configs loaded")
 
 sentry_sdk.init(
