@@ -5,4 +5,7 @@ services:
     container_name: eva02
     restart: unless-stopped
     volumes:
-      - ./member_times.json:/eva/member_times.json
+      - .bot-data:/eva/member_times.json
+
+volumes:
+  bot-data:

@@ -3,6 +3,7 @@ from discord.commands.context import ApplicationContext
 from typing import List, Optional
 from discord.ext import commands
 from datetime import datetime
+from decouple import config
 
 from time import sleep
 import threading
@@ -13,16 +14,10 @@ import select
 import socket
 import io
 
-
 from utils.logger import AppLogger
-from configparser import ConfigParser
 
-CONFIG = ConfigParser()
-CONFIG.read("config.ini")
-
-
-INTEREST_GAMES_CHANNEL = CONFIG["GUILDS"]["ChannelsOfInteress"]
-FORUM_CHANNEL = CONFIG["GUILDS"]["ForumChannels"]
+INTEREST_GAMES_CHANNEL = config("GAMES_CHANNEL")
+FORUM_CHANNEL = config("FORUM_CHANNEL")
 
 
 class Eva(commands.Cog, AppLogger):
