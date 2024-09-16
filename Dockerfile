@@ -9,7 +9,6 @@ COPY ./utils /eva/utils
 COPY ./main.py /eva/main.py
 COPY ./EVA.py /eva/EVA.py
 COPY ./discord.log /eva/discord.log
-COPY ./config.ini /eva/config.ini
 
 COPY requirements.txt /tmp/requirements.txt
 COPY startup.sh /startup.sh
