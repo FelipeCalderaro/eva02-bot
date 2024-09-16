@@ -1,6 +1,6 @@
 FROM python:3.11-alpine
 
-WORKDIR /eva
+WORKDIR /app
 COPY . ./
 COPY requirements.txt /tmp/requirements.txt
 COPY startup.sh /startup.sh
