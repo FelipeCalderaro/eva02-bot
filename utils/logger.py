@@ -1,4 +1,4 @@
-from logging import DEBUG, getLogger, handlers, Formatter, Logger, StreamHandler, INFO
+from logging import DEBUG, INFO, getLogger, handlers, Formatter, Logger, StreamHandler, INFO
 
 
 class AppLogger:
@@ -24,4 +24,4 @@ class AppLogger:
 
         self.logger.addHandler(handler)
         self.logger.addHandler(console_formatter)
-        self.logger.setLevel(DEBUG)
+        self.logger.setLevel(INFO)
